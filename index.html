@@ -3,25 +3,28 @@
   <head>
     <script src="jquery.js"></script>
     <script src="data_generator.js"></script>
+    <script type="text/javascript" src="Twittler_JS.js"></script>
+    <link type="text/css" rel="stylesheet" href="Twittler_CSS.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <title>Twittler</title>
   </head>
   <body>
-    <script>
-
-      $(document).ready(function(){
-        var $body = $('body');
-        $body.html('');
-
-        var index = streams.home.length - 1;
-        while(index >= 0){
-          var tweet = streams.home[index];
-          var $tweet = $('<div></div>');
-          $tweet.text('@' + tweet.user + ': ' + tweet.message);
-          $tweet.appendTo($body);
-          index -= 1;
-        }
-
-      });
-
-    </script>
+    <div class="nav">
+      <div class="container">
+        <ul class="pull-left">
+        <li><a href="website name">Home</a></li>
+        <li><a href="website name">Browse</a></li>
+      </ul>
+      <ul class="pull-right">
+        <li><a href="website name">Sign Up</a></li>
+        <li><a href="website name">Log In</a></li>
+        <li><a href="website name">Help</a></li>
+      </ul>
+      </div>
+    </div>
+    <button id="RefreshButton">Refresh</button>
+    <div class="tweets"></div>
+    
+     
   </body>
 </html>
