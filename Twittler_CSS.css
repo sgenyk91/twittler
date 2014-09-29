@@ -1,0 +1,101 @@
+
+
+.nav a {
+	color: #5a5a5a;
+	font-size: 14px;
+	padding: 14px 10px;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+
+body {
+	background-color: #CCFFFF;
+}
+
+.navbar {
+	background-color: #AAFFFF;
+}
+
+#home, #tweetUser {
+	cursor: pointer;
+}
+
+#search {
+	margin-top: 7px;
+	margin-left: 10px;
+}
+
+.navbar button {
+	margin-right: 20px;
+}
+
+.Title_Area {
+	margin-top: 60px;
+}
+
+.twittler_logo img {
+	display: inline-block;
+	margin: 20px 10px 0px 10px;
+}
+
+.img-rounded {
+	width: 80px;
+	height: 75px;
+}
+
+.Texting_Area button {
+	float: right;
+	margin: 5px 5px 0px 5px;
+}
+
+.Tweet_List button {
+	display: block;
+	margin: 5px auto 10px auto;
+}
+
+textarea {
+	resize: none;
+	margin-top: 30px;
+}
+
+* {
+	font-family: Helvetica;
+}
+
+.tweets {
+	border: 3px solid #5CE6E6;
+	border-radius: 10px;
+	margin-top: 25px;
+	padding: 10px 35px 10px 4px;
+	background-color: #DEFFFF;
+}
+
+#tweetAt, .tweetMessage{
+	margin-left: 25px;
+	margin-bottom: 20px;
+}
+
+.tweetTime {
+	float: right;
+}
+
+.tweetName, .tweetTime {
+	color: #88888E;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
