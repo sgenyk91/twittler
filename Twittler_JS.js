@@ -16,12 +16,12 @@ $(document).ready(function(){
     counter +=10;
     printTweets(currentUser);
   });
-  /*$('#search').keypress(function(e) {
-    if(e.which == 13) {
-      currentUser = $('#search').val();
-      printTweets(currentUser);
-    }
-  });*/
+
+  $('form').submit(function(e) {
+    e.preventDefault();
+    currentUser = $('#search').val();
+    printTweets(currentUser);
+  });
 });
 
 var currentUser = undefined;
