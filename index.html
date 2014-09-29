@@ -1,30 +1,70 @@
 <!DOCTYPE html>
 <html>
+
   <head>
     <script src="jquery.js"></script>
     <script src="data_generator.js"></script>
+    <script src="moment-with-locales.js"></script>
+    <script src="livestamp.js"></script>
     <script type="text/javascript" src="Twittler_JS.js"></script>
-    <link type="text/css" rel="stylesheet" href="Twittler_CSS.css"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="Twittler_CSS.css"/>
+    <link rel="icon" href="Images/favicon.ico"/>
     <title>Twittler</title>
   </head>
+
   <body>
-    <div class="nav">
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <form class="navbar-form navbar-left">
+          <span class="navbar-brand" id="home">Home</span>
+          <span class="form-group">
+            <input class="form-control" id="search" type="text" placeholder="Search">
+          </span>
+        </form>
+        <form class="navbar-form navbar-right">
+          <button type="button" class="btn btn-primary navbar-btn">Sign Up</button>
+          <button type="button" class="btn btn-primary navbar-btn">Log In</button>
+        </form>
+      </div>
+    </nav>
+
+    <div class="Title_Area">
       <div class="container">
-        <ul class="pull-left">
-        <li><a href="website name">Home</a></li>
-        <li><a href="website name">Browse</a></li>
-      </ul>
-      <ul class="pull-right">
-        <li><a href="website name">Sign Up</a></li>
-        <li><a href="website name">Log In</a></li>
-        <li><a href="website name">Help</a></li>
-      </ul>
+        <div class="row">
+          <div class="twittler_logo" align="middle">
+            <img src="Images/Twitter_logo_blue.png" class="img-rounded">
+            <img src="Images/twittler.png">
+            <img src="Images/Twitter_logo_blue.png" class="img-rounded">
+          </div>
+        </div>
       </div>
     </div>
-    <button id="RefreshButton">Refresh</button>
-    <div class="tweets"></div>
-    
-     
+
+    <div class="Texting_Area">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-8 col-xs-offset-2">
+            <textarea class="form-control" id="tweet_message" .col-xs-10 rows="3">Type your message here!</textarea>
+            <button type="button" class="btn btn-primary btn-sm" id="Refresh_Button">Refresh  <span class="glyphicon glyphicon-refresh"></span></button>
+            <button type="button" class="btn btn-primary btn-sm" id="Tweet_Button">Tweet!</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="Tweet_List">
+      <div class="container">
+        <div class="row">
+          <div class="col-xs-8 col-xs-offset-2">
+            <div class="tweets"></div>
+            <button type="button" class="btn btn-primary btn-sm" id="Expand_Button">Expand  <span class="glyphicon glyphicon-collapse-down"></span></button>
+          </div>
+        </div>
+      </div>
+    </div>
+   
   </body>
 </html>
