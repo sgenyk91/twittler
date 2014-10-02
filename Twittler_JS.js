@@ -16,10 +16,17 @@ $(document).ready(function(){
     counter +=10;
     printTweets(currentUser);
   });
-
   $('form').submit(function(e) {
     e.preventDefault();
     currentUser = $('#search').val();
+    printTweets(currentUser);
+  });
+  $(document).on('click', '#tweet_message', function() {
+    $(this).text("");
+  });
+  $(document).on('click', '#Tweet_Button', function() {
+    message = $('#tweet_message').val();
+    writeTweet(message);
     printTweets(currentUser);
   });
 });
