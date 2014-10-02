@@ -11,6 +11,8 @@ streams.users.shawndrost = [];
 streams.users.sharksforcheap = [];
 streams.users.mracus = [];
 streams.users.douglascalhoun = [];
+streams.users.Anonymous = [];
+
 window.users = Object.keys(streams.users);
 
 // utility function for adding tweets to our data structures
@@ -22,7 +24,7 @@ var addTweet = function(newTweet){
 
 // utility function
 var randomElement = function(array){
-  var randomIndex = Math.floor(Math.random() * array.length);
+  var randomIndex = Math.floor(Math.random() * (array.length - 1));
   return array[randomIndex];
 };
 
@@ -58,8 +60,11 @@ scheduleNextTweet();
 
 // utility function for letting students add "write a tweet" functionality
 // (note: not used by the rest of this file.)
+var visitor = 'Anonymous';
+
 var writeTweet = function(message){
   if(!visitor){
+    alert("error");
     throw new Error('set the global visitor property!');
   }
   var tweet = {};
